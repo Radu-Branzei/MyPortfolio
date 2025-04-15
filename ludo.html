@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ludo Presentation</title>
+    <link rel="stylesheet" href="ludo.css" />
+</head>
+
+<body>
+    <a href="homepage.html" class="back-to-home" title="Back to Home">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/left.png" alt="Back Arrow" />
+    </a>
+    <header class="hero" style="background-image: url('images/ludo-background.jpg');">
+        <div class="overlay">
+            <h1>Ludo</h1>
+            <p>Web reenaction of the classic board game Ludo.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="about">
+            <h2>About This Project</h2>
+            <p>Full-stack app web application developed in Angular, with the use of ASP.NET web technologies for the
+                backend server-side connection. Players can create rooms, join existing ones and play real-time
+                turn-based games of the board game Ludo.
+            <h3>How to join a game</h3>
+            <p>
+                <li>After entering the starting page, insert an username and choose one of the two options: Join Lobby
+                    or Create New Lobby.</li>
+                <li>Insert the ID of an existing lobby in the case of joining an existing one. (The ID will have to be
+                    personally transmitted by the host.)</li>
+                <li>
+                    In the case of a host, wait for more players to join and be ready, then press Start Game.
+                </li>
+                <li>
+                    In the case of a guest, click Ready and wait for the host to start the game.
+                </li>
+            </p>
+
+            <p>The multiplayer lobby system allows players to create or join game rooms, invite friends, and manage game
+                settings before starting a match. Players can chat with each other in the lobby, view available game
+                rooms, and join ongoing matches.</p>
+            </p>
+
+            <h3>How to play</h3>
+            <p>
+                <li>Wait for your turn, you are unable to interact with the interface if it's another player's turn.
+                </li>
+                <li>Roll the dice.</li>
+                <li>Click one of your pieces. It will move a corresponding amount of squares, according to the dice
+                    result.</li>
+                <li>Landing on another player's square will knock their piece to the very beginning.</li>
+                <li>The exact number of remaining squares will have to be rolled for a piece to reach the final spot,
+                    the triangle.</li>
+                <li>Once a player gets all their pieces inside the triangle, they have officially finished the game,
+                    allowing the others to continue until only one loser is left.</li>
+            </p>
+            <p>(NOTE: This was a team project consisting of two people with equal contributions. I take most of the
+                responsibility for the
+                frontend side, the responsive design and the connection with the objects created in the backend
+                counterpart.)
+            </p>
+        </section>
+
+        <section class="grid-section">
+            <h2>Key Features</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://img.icons8.com/fluency/48/lightning-bolt.png" alt="Fast Performance Icon"
+                        class="feature-icon" />
+                    <h3>Fast Performance</h3>
+                    <p>Angular single-page applications allow for short loading times.</p>
+                </div>
+                <div class="card">
+                    <img src="https://img.icons8.com/fluency/48/time.png" alt="Turn-Based Icon" class="feature-icon" />
+                    <h3>Turn-Based Gameplay</h3>
+                    <p>Each player takes turns in a structured flow, ensuring fair play and strategy-driven decision
+                        making.</p>
+                </div>
+                <div class="card">
+                    <img src="https://img.icons8.com/fluency/48/group.png" alt="Multiplayer Lobby Icon"
+                        class="feature-icon" />
+                    <h3>Multiplayer Lobby</h3>
+                    <p>Host or join live games in a multiplayer lobby, where players can
+                        start a new game.</p>
+                </div>
+                <div class="card">
+                    <img src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/external-multitasking-freelancer-xnimrodx-lineal-color-xnimrodx.png"
+                        alt="Parallel Games Icon" class="feature-icon" />
+                    <h3>Parallel Games</h3>
+                    <p>Thanks to socket-based communication, you can host or join multiple games at once.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="screenshots" id="project-gallery">
+            <h2>Screenshots</h2>
+            <div class="gallery">
+                <img src="images/LudoScreenshot1.png" alt="Ludo Screenshot 1"
+                    data-caption="Screenshot 1/7: Starting page. Inserting the name is mandatory, while inserting a lobby ID is only necessary if you wish to enter an existing lobby. Otherwise, click Create New Lobby to host a new one." />
+                <img src="images/LudoScreenshot2.png" alt="Ludo Screenshot 2"
+                    data-caption="Screenshot 2/7: The lobby page after creating a new lobby. The lobby ID displayed at the top will have to be given to external players to join. Starting the game with only 1 player is not possible." />
+                <img src="images/LudoScreenshot3.png" alt="Ludo Screenshot 3"
+                    data-caption="Screenshot 3/7: The lobby page after entering an existing lobby. Only once the Ready button has been pressed by all users except the host can the game be started." />
+                <img src="images/LudoScreenshot4.png" alt="Ludo Screenshot 4"
+                    data-caption="Screenshot 4/7: The lobby page after pressing Ready." />
+                <img src="images/LudoScreenshot5.png" alt="Ludo Screenshot 5"
+                    data-caption="Screenshot 5/7: The game page at the start, displaying at all times your respective colour, the current player's turn and the dice which cannot be rolled if it is the another player's turn." />
+                <img src="images/LudoScreenshot6.png" alt="Ludo Screenshot 6"
+                    data-caption="Screenshot 6/7: The game halfway through, from the other player's screen, able to roll the dice this time." />
+                <img src="images/LudoScreenshot7.png" alt="Ludo Screenshot 7"
+                    data-caption="Screenshot 7/7: The ending screen, displaying the ranking of each participant after all but 1 player finished the game." />
+            </div>
+        </section>
+
+
+        <div id="lightbox" class="lightbox">
+            <span class="close">&times;</span>
+            <img class="lightbox-img" src="" alt="">
+            <p class="lightbox-caption"></p>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+
+        <section class="project-links">
+            <h2>Links & Resources</h2>
+            <ul>
+                <li><a href="https://github.com/AdrianBostan2002/Ludo" target="_blank">GitHub Repository</a></li>
+                <li><a href="#" target="_blank">Live Demo (Unavailable due to hosting limitations)</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Brânzei Andrei-Radu.</p>
+    </footer>
+    <script src="gallery.js"></script>
+</body>
+
+</html>

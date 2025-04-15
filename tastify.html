@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tastify Presentation</title>
+    <link rel="stylesheet" href="tastify.css" />
+</head>
+
+<body>
+    <a href="homepage.html" class="back-to-home" title="Back to Home">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/left.png" alt="Back Arrow" />
+    </a>
+    <header class="hero" style="background-image: url('images/tastify-background.png');">
+        <div class="overlay">
+            <h1>tastify</h1>
+            <p>Spotify data analysis and visualization website.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="about">
+            <h2>About This Project</h2>
+            <p>tastify is a full-stack web application developed in Angular, with the use of Node.js for the backend
+                server-side connection. It allows an user to connect with their Spotify account and view information
+                about their most streamed artists/tracks, find information about the uniqueness of one's taste, get
+                recommendations and some other. To make things more interactive, the platform allows the users to spot
+                others with similar listening tendencies.
+            <p>The app is built on Spotify's Spotify for Developers API, which offers programmers all the information
+                needed to create such platforms.</p>
+
+            <h3>Log In Protocol</h3>
+            <p>To view the information needed, an user needs to connect to their Spotify account. Instead of directly
+                entering the username and password and allowing for developers to get hold of them, the OAuth 2.0
+                protocol allows the user to redirect to an external Spotify page, where the credidentials will be
+                introduces and not passed forward.</p>
+            <h3>Website features</h3>
+            <p>
+                Once the user successfully logs in, the home page will present them with 3 main sections:
+                <li><b>Discover yourself!:</b> Get information about your most streamed artists/tracks over a chosen
+                    period of time. Up to 50 instances can be presented at once.</li>
+                <li><b>How unique are you!:</b> Depening on an average popularity score obtained from each of your songs
+                    or artists, we can tell how niche your taste is compared to users worldwide.</li>
+                <li><b>Find music you like!:</b> Introduce a list of up to 5 artists/tracks and looking at different
+                    aspects of each, we'll create a list of songs that might fit your preferences.</li>
+            </p>
+            <p>Additional important features:
+                <li>Automatic creation of an account: After the user logs in, the platform will automatically create an
+                    account for them, keeping track of their listening history after Spotify refreshes it.</li>
+                <li>Search bar: Enter a prompt and by pressing enter we'll display the most trendy artists/tracks and
+                    additionally, existent users on the platform.</li>
+                <li>Artist pages: Clicking on an artist card will open a dedicated page, showcasing their most
+                    popular songs, albums, and other users listening to them.</li>
+                <li>Track pages: Clicking on a track card will open a dedicated page, showcasing different musical
+                    aspects of it (BPM, Key, Time Signature etc.), alongside other users listening to it.</li>
+                <li>User pages: Clicking on another user's page will open their profile, where you can find artists and
+                    tracks you both share listening to.</li>
+                <li>
+                    Player: The website has an additional music player which is active when the user has recently
+                    connected to Spotify, allowing for music to be played directly from the platform.
+                </li>
+
+            </p>
+        </section>
+
+        <section class="grid-section">
+            <h2>Key Features</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://img.icons8.com/fluency/48/lightning-bolt.png" alt="Fast Performance Icon"
+                        class="feature-icon" />
+                    <h3>Fast Performance</h3>
+                    <p>Angular single-page applications allow for short loading times.</p>
+                </div>
+                <div class="card">
+                    <img src="https://img.icons8.com/fluency/48/database.png" alt="Database Icon"
+                        class="feature-icon" />
+                    <h3>Data Persistence</h3>
+                    <p>Reliable databases keep your data safe and accessible at all times.</p>
+                </div>
+                <div class="card">
+                    <img src="https://img.icons8.com/fluency/48/lock.png" alt="Secure Icon" class="feature-icon" />
+                    <h3>Secure</h3>
+                    <p>OAuth 2.0 protocols assures the user their credidentials can't be stolen.</p>
+                </div>
+                <div class="card">
+                    <img src="https://img.icons8.com/fluency/48/paint-palette.png" alt="Custom UI Icon"
+                        class="feature-icon" />
+                    <h3>Custom UI</h3>
+                    <p>Straight-forward design that's easy on the eye and simple to navigate.</p>
+                </div>
+                <div class="card">
+                    <img src="https://img.icons8.com/fluency/48/info.png" alt="Informative Icon" class="feature-icon" />
+                    <h3>Informative</h3>
+                    <p>Offers deep insights into musical attributes like tempo, mood, energy, and popularity.</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://img.icons8.com/fluency/48/resize.png" alt="Scalability Icon"
+                        class="feature-icon" />
+                    <h3>Scalability</h3>
+                    <p>Designed to handle growing data and users without compromising performance or usability.</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://img.icons8.com/fluency/48/cookie.png" alt="Session Persistence Icon"
+                        class="feature-icon" />
+                    <h3>Persistent Sessions</h3>
+                    <p>Keeps your session active using cookies, so you stay logged in until you choose to log out.</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://img.icons8.com/fluency/48/spotify.png" alt="Spotify API Icon"
+                        class="feature-icon" />
+                    <h3>Spotify API</h3>
+                    <p>Built on top of Spotify’s API, when the platform evolves, the app benefits from those
+                        updates automatically.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="screenshots" id="project-gallery">
+            <h2>Screenshots</h2>
+            <div class="gallery">
+                <img src="images/tastifyScreenshot1.png" alt="Screenshot 1"
+                    data-caption="Screenshot 1/13: Starting page welcome section. Logging in will redirect the user to an external Spotify page to enter the credidentials, keeping the password safe from developers of platforms using the respective API." />
+                <img src="images/tastifyScreenshot2.png" alt="Screenshot 2"
+                    data-caption="Screenshot 2/13: The home page once a user successfully logs in. Presents an navigation bar always present at the top of any page with a search bar, and the options to return to the home page, log out or view your profile. The page also allows the user to access the 3 main functions of this platform, viewing listening history, obscurity score and getting recommendations." />
+                <img src="images/tastifyScreenshot3.png" alt="Screenshot 3"
+                    data-caption="Screenshot 3/13: The Listening Info page, showing up to 50 instances of a user's most streamed artists over a chosen period of time." />
+                <img src="images/tastifyScreenshot4.png" alt="Screenshot 4"
+                    data-caption="Screenshot 4/13: The Listening Info page, showing up to 50 instances of a user's most streamed tracks over a chosen period of time." />
+                <img src="images/tastifyScreenshot5.png" alt="Screenshot 5"
+                    data-caption="Screenshot 5/13: The Obscurity Score page, showing the average popularity of the user's streamed artists and tracks, along with the most and least popular songs and the users using the platform with the most similar respective score." />
+                <img src="images/tastifyScreenshot6.png" alt="Screenshot 6"
+                    data-caption="Screenshot 6/13: The Recommendations page, which allows the user to enter up to 5 artists/tracks and get recommendations based on the genre, popularity etc. of each one." />
+                <img src="images/tastifyScreenshot7.png" alt="Screenshot 7"
+                    data-caption="Screenshot 7/13: The Recommendations page and its output after the user selects a few artists/tracks instances." />
+                <img src="images/tastifyScreenshot8.png" alt="Screenshot 8"
+                    data-caption="Screenshot 8/13: The Search Results page, accessible after entering a prompt in the search bar and pressing Enter, showing results for artists, songs and other existent users." />
+                <img src="images/tastifyScreenshot9.png" alt="Screenshot 9"
+                    data-caption="Screenshot 9/13: The profile page of a different user, displaying their obscurity score, a link to their official Spotify account and lists of artists and tracks you both listen to." />
+                <img src="images/tastifyScreenshot10.png" alt="Screenshot 10"
+                    data-caption="Screenshot 10/13: The page of an artist, showing their popularity and most trendy songs/albums, along with a list of users listening to them." />
+                <img src="images/tastifyScreenshot11.png" alt="Screenshot 11"
+                    data-caption="Screenshot 11/13: The page of a track, showing its popularity, the artists performing it, diverse musical aspects about it and a list of users listening to it." />
+                <img src="images/tastifyScreenshot12.png" alt="Screenshot 12"
+                    data-caption="Screenshot 12/13: The player present at the bottom of the page, only active when the currently logged in user is streaming a song. The buttons allow controlling Spotify from the outside source." />
+                <img src="images/tastifyScreenshot13.png" alt="Screenshot 13"
+                    data-caption="Screenshot 13/13: The My Profile page, displaying information about the current user and their recent listening history." />
+
+            </div>
+        </section>
+
+        <div id="lightbox" class="lightbox">
+            <span class="close">&times;</span>
+            <img class="lightbox-img" src="" alt="">
+            <p class="lightbox-caption"></p>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+
+        <section class="project-links">
+            <h2>Links & Resources</h2>
+            <ul>
+                <li><a href="https://github.com/Radu-Branzei/tastify" target="_blank">GitHub Repository</a></li>
+                <li><a href="#" target="_blank">Live Demo (Unavailable due to hosting limitations)</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Brânzei Andrei-Radu.</p>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+
+</html>
